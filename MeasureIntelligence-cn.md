@@ -1,4 +1,4 @@
-# Copyright Aknowledgement 版权声明
+# Copyright Acknowledgement 版权声明
 
 The literature is translated by the students from PKU, UCAS and USTB. The copyright belongs to all the translation contributors:
 
