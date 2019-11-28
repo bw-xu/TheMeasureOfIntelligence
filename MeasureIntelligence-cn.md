@@ -1,3 +1,15 @@
+# Copyright Aknowledgement 版权声明
+
+The literature is translated by Students from PKU, UCAS and USTB. The copyright belongs to all the translation contributor:
+
+Bowen Xu* (PKU, xubowen@pku.edu.cn), Bohao Chen (UCAS), Yaling Ma (USTB) and Yuhang Liu (USTB).
+
+Please contact us if you need to reprint.  
+
+Salute Francois Chollet for his outstanding work!
+
+To read and download the original paper, see [arXiv:1911.01547v2](https://arxiv.org/abs/1911.01547v2)
+
 # The Measure of Intelligence 测量智能
 
 Francois Chollet
@@ -373,4 +385,3 @@ Current evidence (e.g. [51, 46, 16, 59, 50]) points to the fact that contemporar
 In summary, the hallmark of broad abilities (including general intelligence, as per II.1.2) is the power to adapt to change, acquire skills, and solve previously unseen problems – not skill itself, which is merely the crystallized output of the process of intelligence. Testing for skill at a task that is known in advance to system developers (as is the current trend in general AI research) can be gamed without displaying intelligence, in two ways: 1) unlimited prior knowledge, 2) unlimited training data. To actually assess broad abilities, and thus make progress toward flexible AI and eventually general AI, it is imperative that we control for priors, experience, and generalization difficulty in our evaluation methods, in a rigorous and quantitative way.	
 
 总之，broad abilities （包括通用智能，如II.1.2）的标志是适应变化，获得技能，并解决以前未见过的问题的能力——而不是技能本身，技能只是智能过程的结晶。在一项系统开发人员事先就知道的任务中测试技能（这是当前人工智能研究的趋势），可以在不显示智能的情况下进行，方法有两种：1)无限的先验知识，2)无限的训练数据。要真正评估广泛的能力，从而在灵活的人工智能和最终的通用人工智能方面取得进展，我们必须在评估方法中严格和定量地控制先验、经验和泛化难度。
-
