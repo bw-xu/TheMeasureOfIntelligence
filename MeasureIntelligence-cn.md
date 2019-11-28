@@ -1,14 +1,14 @@
 # Copyright Aknowledgement 版权声明
 
-The literature is translated by Students from PKU, UCAS and USTB. The copyright belongs to all the translation contributor:
+The literature is translated by the students from PKU, UCAS and USTB. The copyright belongs to all the translation contributors:
 
 Bowen Xu* (PKU, xubowen@pku.edu.cn), Bohao Chen (UCAS), Yaling Ma (USTB) and Yuhang Liu (USTB).
 
 Please contact us if you need to reprint.  
 
-Salute Francois Chollet for his outstanding work!
+**Salute Francois Chollet for his outstanding work!**
 
-To read and download the original paper, see [arXiv:1911.01547v2](https://arxiv.org/abs/1911.01547v2)
+**To read and download the original paper, see [arXiv:1911.01547v2](https://arxiv.org/abs/1911.01547v2)**
 
 # The Measure of Intelligence 测量智能
 
