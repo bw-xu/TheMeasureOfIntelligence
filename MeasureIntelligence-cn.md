@@ -338,7 +338,11 @@ Besides efforts to broaden task-speciﬁc evaluation to batteries of multi-task 
 
 An alternative, more promising approach is to leverage what psychometrics can teach us about ability assessment and test design to create new types of benchmarks targeted speciﬁcally at evaluating broad abilities in AI systems. Along these lines, Hern´andezOrallo et al. have proposed extending psychometric evaluation to any intelligent system, including AI agents and animals, in “Universal Psychometrics” [39].
 
+另一种更有前途的方法是，利用心理测量学在能力评估和测试设计方面所能教给我们的东西，来创建新的基准，专门用于评估人工智能系统中的广泛能力。沿着这些思路，Hern ' andezOrallo 等人提出将心理测量评估扩展到任何智能系统，包括人工智能代理和动物，在“通用心理测量学”[39]中。
+
 We argue that several important principles of psychometrics can inform intelligence evaluation in AI in the context of the development of broad AI and general AI:
+
+我们认为，在广义人工智能和广义人工智能发展的背景下，心理测量学的几个重要原则可以指导人工智能的智能评估:
 
 ## II A new perspective 新观点
 
