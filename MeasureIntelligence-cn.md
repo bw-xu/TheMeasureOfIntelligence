@@ -21,7 +21,7 @@ November 6, 2019
 
 To make deliberate progress towards more intelligent and more human-like artificial systems, we need to be following an appropriate feedback signal: we need to be able to define and evaluate intelligence in a way that enables comparisons between two systems, as well as comparisons with humans. Over the past hundred years, there has been an abundance of attempts to define and measure intelligence, across both the fields of psychology and AI. We summarize and critically assess these definitions and evaluation approaches, while making apparent the two historical conceptions of intelligence that have implicitly guided them. We note that in practice, the contemporary AI community still gravitates towards benchmarking intelligence by comparing the skill exhibited by AIs and humans at specific tasks, such as board games and video games. We argue that solely measuring skill at any given task falls short of measuring intelligence, because skill is heavily modulated by prior knowledge and experience: unlimited priors or unlimited training data allow experimenters to “buy” arbitrary levels of skills for a system, in a way that masks the system’s own generalization power. We then articulate a new formal definition of intelligence based on Algorithmic Information Theory, describing intelligence as skill-acquisition efficiency and highlighting the concepts of scope, generalization difficulty, priors, and experience, as critical pieces to be accounted for in characterizing intelligent systems. Using this definition, we propose a set of guidelines for what a general AI benchmark should look like. Finally, we present a new benchmark closely following these guidelines, the Abstraction and Reasoning Corpus (ARC), built upon an explicit set of priors designed to be as close as possible to innate human priors. We argue that ARC can be used to measure a human-like form of general fluid intelligence and that it enables fair general intelligence comparisons between AI systems and humans.
 
-为了在更智能、更像人类的人工系统方面取得缓慢而可衡量的进展，我们需要有一个合适的反馈：我们需要能够定义和评估智能，使两个智能系统以及智能系统与人类能进行比较。在过去的一百年里，在心理学和人工智能领域都有大量的定义智能和测量智能的尝试。我们对这些定义和评估方法进行了总结和批判，同时指明了两个关于智能的历史概念that have implicitly guided them。我们注意到，在实践中，目前AI社区仍然倾向于通过比较AI和人类在特定任务（如棋类游戏和视频游戏）中表现出的技能，来确定基准。我们认为仅仅在特定的任务上评价上述获得的技能，并不能被作为是评价智能的过程，因为技能主要受到先验(prior)和经验的影响：无限的先验或训练数据让实验者“买到”任意级别的技能系统，这在某种程度上掩饰了系统的泛化能力。我们因此以算法信息论(Algorithm Information Theory)为基础，对智能给出了一个新的形式化的定义，将智能描述为技能获取效率，并强调将作用域、泛化难度、先验和经验等概念作为描述智能系统的关键部分。根据这个定义，我们提出了一套制定AGI基准测试的准则。最后，我们提出了一个符合这些准则的新的基准，即抽象-推理语料库(Abstraction and Reasoning Corpus , ARC)，它建立在一组明确的先验之上，这些先验被设计为尽可能接近人类先天的先验。我们认为，ARC也可以用来测量人类这样的通用智能体，并使人工智能系统和人类之间的通用智能的比较成为可能。
+为了在更智能、更像人类的人工系统方面取得缓慢而可衡量的进展，我们需要有一个合适的反馈：我们需要能够定义和评估智能，使两个智能系统以及智能系统与人类能进行比较。在过去的一百年里，在心理学和人工智能领域都有大量的定义智能和测量智能的尝试。我们对这些定义和评估方法进行了总结和批判，同时指明了两个关于智能的历史概念that have implicitly guided them。我们注意到，在实践中，目前AI社区仍然倾向于通过比较AI和人类在特定任务（如棋类游戏和视频游戏）中表现出的技能，来确定基准。我们认为仅仅在特定的任务上评价上述获得的技能，并不能被作为是评价智能的过程，因为技能主要受到先验(prior)和经验的影响：无限的先验或训练数据能让实验者“买到”任意级别的技能系统，这在某种程度上掩饰了系统的泛化能力。我们因此以算法信息论(Algorithm Information Theory)为基础，对智能给出了一个新的形式化的定义，将智能描述为技能获取效率，并强调将作用域、泛化难度、先验和经验等概念作为描述智能系统的关键部分。根据这个定义，我们提出了一套制定AGI基准测试的准则。最后，我们提出了一个符合这些准则的新的基准，即抽象-推理语料库(Abstraction and Reasoning Corpus , ARC)，它建立在一组明确的先验之上，这些先验被设计为尽可能接近人类先天的先验。我们认为，ARC也可以用来测量人类这样的通用智能体，并使人工智能系统和人类之间的通用智能的比较成为可能。
 
 Contents
 I Context and history
@@ -114,7 +114,7 @@ For instance, common-sense dictionary definitions of intelligence may be useful 
 
 It is a testimony to the immaturity of our field that the question of what we mean when we talk about intelligence still doesn’t have a satisfying answer. What’s worse, very little attention has been devoted to rigorously defining it or benchmarking our progress towards it. Legg and Hutter noted in a 2007 survey of intelligence definitions and evaluation methods[53]: “to the best of our knowledge, no general survey of tests and definitions has been published”. A decade later, in 2017, Hern´andez-Orallo released an extensive survey of evaluation methods [36] as well as a comprehensive book on AI evaluation [37]. Results and recommendations from both of these efforts have since been largely ignored by the community.	
 
-当我们谈论智能时，我们在谈论什么？这个问题仍然没有一个令人满意的答案，这揭示出我们这个领域的不成熟。更糟糕的是，很少有人关注智能的严格地定义或为制定基准。Legg 和Hutter在2007年对智力定义和评估方法[53]的调研中指出：“就我们所知，还没有关于测试和定义的全面调研发表过。”十年后的2017年，Hern ' andez-Orallo发布了一份关于评估方法[36]的广泛调研，以及一本关于人工智能评估[37]的较全面的书籍。这两项努力的结果和建议后来基本上被社区所忽视。
+当我们谈论智能时，我们在谈论什么？这个问题仍然没有一个令人满意的答案，这揭示出我们这个领域的不成熟。更糟糕的是，很少有人关注智能的严格的定义或为之制定基准。Legg 和Hutter在2007年对智力定义和评估方法[53]的调研中指出：“就我们所知，还没有关于测试和定义的全面调研发表过。”十年后的2017年，Hern ' andez-Orallo发布了一份关于评估方法[36]的广泛调研，以及一本关于人工智能评估[37]的较全面的书籍。这两项努力的结果和建议后来基本上被社区所忽视。
 
 We believe this lack of attention is a mistake, as the absence of widely-accepted explicit definitions has been substituted with implicit definitions and biases that stretch back decades. Though invisible, these biases are still structuring many research efforts today, as illustrated by our field’s ongoing fascination without performing humans at board games or video games (a trend we discuss in I.3.5 and II.1). The goal of this document is to point out the implicit assumptions our field has been working from, correct some of its most salient biases, and provide an actionable formal definition and measurement benchmark for human-like general intelligence, leveraging modern insight from developmental cognitive psychology.	
 
@@ -173,12 +173,12 @@ This view of intelligence was once so dominant that “learning” (discounted a
 Presumably the child brain is something like a notebook as one buys it from the stationer’s. Rather little mechanism, and lots of blank sheets.
 Alan Turing, 1950	
 
-大概孩子的大脑就想是从文具店刚买到的笔记本。只有相当少的机制，和大量的空白的工作表。
+大概孩子的大脑就像是从文具店刚买到的笔记本。仅包含相当少的既定内容和大量的空白页。
 Alan Turing, 1950
 
 In contrast, a number of researchers have taken the position that intelligence lies in the general ability to acquire new skills through learning; an ability that could be directed to a wide range of previously unknown problems – perhaps even any problem at all. Contrast Minsky’s task-focused definition of AI with the following one, paraphrased from McCarthy [60] by Hernandez-Orallo: “AI is the science and engineering of making machines do tasks they have never seen and have not been prepared for beforehand” [36].	
 
-相反，许多研究人员认为智能是通过学习获得新技能的通用能力；这是一种能力，可以被用到解决一个更大范围的以前未知的问题，甚至可能是任意问题。下述定义与Minsky的以任务为中心对人工智能的定义相反，由后者是Hernandez-Orallo改述自McCarthy [60]：“人工智能是一门科学和工程，它让机器完成他们从未见过、也没有事先准备好面对的任务。”
+相反，许多研究人员认为智能是通过学习获得新技能的通用能力；这是一种能力，可以被用到解决一个更大范围的以前未知的问题，甚至可能是任意问题。下述定义与Minsky的以任务为中心对人工智能的定义相反，由后者是Hernandez-Orallo改述自McCarthy [60]：“人工智能是一门科学和工程，它让机器完成它们从未见过、也没有事先准备好面对的任务。”
 
 The notion that machines could acquire new skills through a learning process similar to that of human children was initially laid out by Turing in his 1950 paper [91]. In 1958, Friedberg noted astutely: “If we are ever to make a machine that will speak, understand or translate human languages, solve mathematical problems with imagination, practice a profession or direct an organization, either we must reduce these activities to a science so exact that we can tell a machine precisely how to go about doing them or we must develop a machine that can do things without being told precisely how” [26]. But although the idea of generality through learning was given significant consideration at the birth of the field, and has long been championed by pioneers like McCarthy and Papert, it lay largely dormant until the resurgence of machine learning in the 1980s.	
 
@@ -186,34 +186,33 @@ The notion that machines could acquire new skills through a learning process sim
 
 This view of intelligence echoes another long-standing conception of human nature that has had a profound influence on the history of cognitive science, contrasting with the evolutionary psychology perspective: Locke’s Tabula Rasa (blank slate), a vision of the mind as a flexible, adaptable, highly general process that turns experience into behavior, knowledge, and skills. This conception of the human mind can be traced back to Aristotle (De Anima, c. 350BC, perhaps the first treatise of psychology [3]), was embraced and popularized by Enlightenment thinkers such as Hobbes [42], Locke [56], and Rousseau [78]. It has more recently found renewed vitality within cognitive psychology (e.g. [79]) and in AI via connectionism (e.g. [41]).	
 
-这一智能视角与另一个长期存在的人性的观念相似，该观念产生了深刻的影响认知科学的历史，与进化心理学的角度对比：洛克的白板，将心智视为的灵活、适应性强、高度通用的过程，该过程将经验转化为行为、知识和技能。这种关于人类心智的概念可以追溯到亚里士多德（De Anima，c. 350BC，这可能是心理学的第一部专著[3]），被Hobbes [42]、Locke [56]和Rousseau等启蒙思想家所接受和推广[78]。它最近在认知心理学（如[79]）和连接主义人工智能(如[41])中有了新的活力。
+这一智能视角与另一个长期存在的人性的观念相似，该观念产生了深刻的影响认知科学的历史，与进化心理学的角度对比：洛克的白板，将心智视为灵活、适应性强、高度通用的过程，该过程将经验转化为行为、知识和技能。这种关于人类心智的概念可以追溯到亚里士多德（De Anima，c. 350BC，这可能是心理学的第一部专著[3]），被Hobbes [42]、Locke [56]和Rousseau等启蒙思想家所接受和推广[78]。它最近在认知心理学（如[79]）和连接主义人工智能(如[41])中有了新的活力。
 
 With the resurgence of machine learning in the 1980s, its rise to intellectual dominance in the 2000s, and its peak as an intellectual quasi-monopoly in AI in the late 2010s via Deep Learning, a connectionist-inspired Tabula Rasa is increasingly becoming the dominant philosophical framework in which AI research is taking place. Many researchers are implicitly conceptualizing the mind via the metaphor of a “randomly initialized neural network” that starts blank and that derives its skills from “training data” – a cognitive fallacy that echoes early AI researchers a few decades prior who conceptualized the mind as a kind of mainframe computer equipped with clever subroutines. We see the world through the lens of the tools we are most familiar with.	
 
-随着机器学习在1980年代的复兴，在2000年代占据主导地位，在2010年代末通过深度学习到达顶峰而占据垄断地位，连接主义驱动的白板正日益成为人工智能研究的主导哲学框架。许多研究人员正在隐式地概念化心智，隐喻“随机神经网络初始化”为的白板，其技能来自“训练数据”—— 这是一种认知谬误，与几十年前早期人工智能研究人员的观点类似，即认为心智作为一种大型计算机，具有一些聪明的子程序。我们总是通过我们最熟悉的工具来观察世界。
+随着机器学习在1980年代的复兴，在2000年代占据主导地位，在2010年代末通过深度学习到达顶峰而占据垄断地位，连接主义驱动的白板正日益成为人工智能研究的主导哲学框架。许多研究人员正在隐式地概念化心智——将其隐喻为“随机初始化的神经网络”；最开始是空白的，其技能来自“训练数据”—— 这是一种认知谬误，与几十年前早期人工智能研究人员的观点类似，即认为心智是一种大型计算机，计算机上载有一些聪明的子程序。我们总是通过我们最熟悉的工具来观察世界。
 
 Today, it is increasingly apparent that both of these views of the nature of human intelligence – either a collection of special-purpose programs or a general-purpose Tabula Rasa–are likely incorrect, which we discuss in II.1.3, along with implications for artificial intelligence.	
 今天，越来越明显的是，这两种关于人类智能本质的观点——要么是一组特殊用途的程序，要么是一张通用的白板——都可能是错误的。
 
-## I.3 AI evaluation: from measuring skills to measuring broad abilities	评估：从测量技能到测量broad abilities
+## I.3 AI evaluation: from measuring skills to measuring broad abilities	评估：从测量技能到测量通用能力
 
 These two conceptualizations of intelligence – along with many other intermediate views combining elements from each side – have influenced a host of approaches for evaluating intelligence in machines, in humans, and more rarely in both at the same time, which we discuss below. Note that this document is not meant as an extensive survey of AI evaluation methods – for such a survey, we recommend Hernandez-Orallo 2017 [37]. Other notable previous surveys include Cohen and Howe 1988 [69] and Legg and Hutter 2007 [53].	
 
-这两种智能概念——以及许多其他结合了双方元素的中间观点——已经影响了许多评估机器、人类智能的方法，并且很少同时在这两种情况下评估，我们将在下面讨论。请注意，本文并不是对人工智能评估方法的广泛调研——对于这样的调研，我们推荐Hernandez-Orallo 2017[37]。其他值得注意的调研包括Cohen和Howe 1988[69]以及Legg和Hutter 2007[53]。
+这两种智能概念——以及许多其他结合了双方元素的中间观点——已经影响了许多评估机器或人类智能的方法，并且很少同时评估这两种情况。我们将在下面做出讨论。请注意，本文并不是对人工智能评估方法的广泛调研——对于这样的调研，我们推荐Hernandez-Orallo 2017[37]。其他值得注意的调研包括Cohen和Howe 1988[69]以及Legg和Hutter 2007[53]。
 
 ### I.3.1 Skill-based, narrow AI evaluation	基于技能的专用AI的评估
 
 In apparent accordance with Minsky’s goal for AI, the major successes of the field have been in building special-purpose systems capable of handling narrow, well-described tasks, sometimes at above human-level performance. This success has been driven by performance measures quantifying the skill of a system at a given task (e.g. how well an AI plays chess, how well an image classifier recognizes cats from dogs). There is no single, formalized way to do skill-based evaluation. Historically successful approaches include:	
 
-与Minsky的人工智能目标明显一致，该领域的主要成功之处在于建立了特殊用途的系统，这些系统能够处理狭窄的、描述良好的任务，有时还具有高于人类水平的性能。这一成功是由量化系统在特定任务中的技能的性能指标驱动的(例如，人工智能下国际象棋的水平，图像分类器识别猫和狗的能力)。没有一种单一的、正式的方法来进行基于技能的评估。历史上成功的方法包括:
+与Minsky的人工智能目标明显一致，该领域的主要成功之处在于建立了专业用途的系统，这些系统能够处理有限的、描述良好的任务，有时还具有高于人类水平的性能。这一成功是由具体量化系统在特定任务中表现出的性能指标而推动的(例如，人工智能下国际象棋的水平，图像分类器识别猫和狗的能力)。没有一种单一的、正式的方法来进行基于技能的评估。历史上成功的方法包括:
 
  - Human review: having human judges observe the system’s input-output response and score it. This is the idea behind the Turing test and its variants. This evaluation mode is rarely used in practice, due to being expensive, impossible to automate, and subjective. Some human-facing AI systems (in particular commercial chatbots) use it as one of multiple evaluation mechanics.
  - White-box analysis: inspecting the implementation of the system to determine its input-output response and score it. This is most relevant for algorithms solving a fully-described task in a fully-described environment where all possible inputs can be explicitly enumerated or described analytically (e.g. an algorithm that solves the traveling salesman problem or that plays the game “Connect Four”), and would often take the form of an optimality proof.
  - Peer confrontation: having the system compete against either other AIs or humans. This is the preferred mode of evaluation for player-versus-player games, such as chess.
  - Benchmarks: having the system produce outputs for a “test set” of inputs (or environments) for which the desired outcome is known, and score the response.	
-
- - 人工评审:由人工评审观察系统的输入-输出响应并进行评分。这就是图灵测试及其变体背后的思想。这种评估模式在实践中很少使用，因为成本高，不可能自动化，而且主观。一些面向人类的人工智能系统（尤其是商业聊天机器人）将其用作多种评估机制之一。
- - 白盒分析：检查系统的实现，确定其输入-输出响应，并对其进行评分。这是最相关的算法解决一个完整的描述的任务在一个完整的描述环境中所有可能的输入都可以显式地枚举或描述分析（例如一个算法解决旅行商问题,或者玩游戏“四子棋”），并常常采取一个最优的形式证明。
+ - 人工评审：由人工评审观察系统的输入-输出响应并进行评分。这就是图灵测试及其变体背后的思想。这种评估模式在实践中很少使用，因为成本高，不可能自动化，而且主观。一些面向人类的人工智能系统（尤其是商业聊天机器人）将其用作多种评估机制之一。
+ - 白盒分析：检查系统的实现，确定其输入-输出响应，并对其进行评分。该方法经常评价已知环境和问题下的算法。此时，问题中所有可能的输入都可以显式地枚举或描述分析（例如解决旅行商问题,或者玩游戏“四子棋”），并常常采取一个最优的形式证明。
  - 同伴对抗：让系统与其他人工智能或人类竞争。这是评估玩家对玩家游戏（如国际象棋）的首选模式。
  - 基准测试:让系统为已知期望结果的输入（或环境）的“测试集”产生输出，并对响应进行评分。
 
@@ -351,7 +350,7 @@ We argue that several important principles of psychometrics can inform intellige
   - Validity implies that what the test assesses should be clearly understood; test creators should be able to answer 1) what assumptions does the test make? 2) what does the test predict, i.e. what broad abilities would a successful result demonstrate, and how well does the test predict these abilities? (Which should ideally be achieved via statistical quantification.)
   - Standardization implies adopting shared benchmarks across the subset of the research community that pursues broad AI and general AI. Standard benchmarks in computer vision and natural language processing have already shown to be highly effective catalyzers of progress.
   - Freedom from bias implies that the test should not be biased against groups of test-takers in ways that run orthogonal to the abilities being assessed. For instance, a test of intelligence designed for both humans and AI should not leverage uniquely human acquired knowledge, or should not involve constraints unrelated to intelligence within which machines have unfair advantages (such as fast reaction times), etc.
-  
+
 Simultaneously, we argue that certain other aspects of psychometrics may be discarded in the development of new intelligence tests for AI:
 
  - The exact number and taxonomy of cognitive abilities considered, being a subject of ongoing debate within cognitive psychology and being perhaps overly anthropocentric, should not be used as a strict template for artificial cognitive architectures and their evaluation. Existing taxonomies may at best serve as a source of inspiration.
