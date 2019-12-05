@@ -344,11 +344,11 @@ We argue that several important principles of psychometrics can inform intellige
 我们认为，在广义人工智能和广义人工智能发展的背景下，心理测量学的几个重要原则可以指导人工智能的智能评估:
 
  - Measuring abilities (representative of broad generalization and skill-acquisition efficiency), not skills. Abilities are distinct from skills in that they induce broad generalization, i.e. they form the basis for skill across a broad range of tasks, including tasks that were previously unknown to the ability-enabled system and its developers.
- 
+
  - 衡量能力(代表泛化和技能获取效率)，而不是技能。能力与技能的不同之处在于，它们会产生广泛的泛化，也就是说，它们构成了广泛任务中技能的基础，包括那些启用了功能的系统及其开发人员以前未知的任务。
   
  - Doing so via batteries of tasks rather than any single task, that should be previously unknown to both the test taking system and the system developers (this is necessary to assess broad generalization as opposed to skill or local generalization).
- 
+
  - 通过大量的任务而不是单个任务来完成，这应该是测试系统和系统开发人员之前不知道的(这是评估泛化而不是技能或局部泛化所必需的)。
 
  - Having explicit standards regarding reliability, validity, standardization, and freedom from bias:
@@ -359,7 +359,7 @@ We argue that several important principles of psychometrics can inform intellige
   - Freedom from bias implies that the test should not be biased against groups of test-takers in ways that run orthogonal to the abilities being assessed. For instance, a test of intelligence designed for both humans and AI should not leverage uniquely human acquired knowledge, or should not involve constraints unrelated to intelligence within which machines have unfair advantages (such as fast reaction times), etc.
 
 =======
- 
+
  - 关于可靠性，有效性，标准化和无偏见方面具有明确的标准：
 
    - Reliability implies that the test results for a given system should be reproducible over time and across research groups.
@@ -371,7 +371,7 @@ We argue that several important principles of psychometrics can inform intellige
    - 有效性意味着应该清楚地理解测试评估的内容；测试创建者应该能够回答 1)测试做了什么假设？ 2)测试预测的是什么，即一个成功的结果会证明哪些广泛的能力，以及测试对这些能力的预测程度如何？ （理想情况下应通过统计量化来实现。）
    
    - Standardization implies adopting shared benchmarks across the subset of the research community that pursues broad AI and general AI. Standard benchmarks in computer vision and natural language processing have already shown to be highly effective catalyzers of progress.
- 
+
    - 标准化意味着在追求广泛AI和通用AI的研究团体的子集中采用共享基准。 计算机视觉和自然语言处理中的标准基准已经显示出其是进步的高效催化剂。
 
    - Freedom from bias implies that the test should not be biased against groups of test-takers in ways that run orthogonal to the abilities being assessed. For instance, a test of intelligence designed for both humans and AI should not leverage uniquely human acquired knowledge, or should not involve constraints unrelated to intelligence within which machines have unfair advantages (such as fast reaction times), etc.
@@ -448,9 +448,15 @@ In summary, the hallmark of broad abilities (including general intelligence, as 
 
 It is a well-known fact of cognitive psychology that different individuals demonstrate different cognitive abilities to varying degrees, albeit results across all tests of intelligence are correlated. This points to cognition being a multi-dimensional object, structured in a hierarchical fashion (figure 1), with a single generality factor at the top, the g factor. But is “general intelligence” the apex of the cognitive pyramid in an absolute sense (as is sometimes assumed by proponents of“Artificial General Intelligence”), or is it merely a broader cognitive ability, one that would remain fairly specialized, and wouldn’t be qualitatively distinct from other abilities lower down the hierarchy? How general is human intelligence?
 
+在认知心理学中，一个广泛被认可的事实是：尽管所有智力测验的结果间存在相关性，但不同的个体在不同的评判标准上表现出了不同的认知能力。这表明认知是一个多维对象，它以分层方式构造（图1），在顶部有一个通用因素，即g因素。 但是“通用智能”究竟是绝对意义上的认知金字塔的顶点（有时被“人工通用智能”的支持者所假定是其顶点），还是仅仅是一种更广泛的认知能力，一种被相当特化了的，且不会在层次上与其他能力在质量上有区别吗？ 人类的智能到底有多通用？
+
 The No Free Lunch theorem [98, 97] teaches us that any two optimization algorithms (including human intelligence) are equivalent when their performance is averaged across every possible problem, i.e. algorithms should be tailored to their target problem in order to achieve better-than-random performance. However, what is meant in this context by “every possible problem” refers to a uniform distribution over problem space; the distribution of tasks that would be practically relevant to our universe (which, due to its choice of laws of physics, is a specialized environment) would not fit this definition. Thus we may ask: is the human g factor universal? Would it generalize to every possible task in the universe?
 
+“没有免费的午餐”[98, 97]定理告诉我们：面对所有可能的问题，任意的两个优化算法（包括人类智能）在这些问题上表现出的平均性能是相同的。也就是说，我们应当针对特定的问题去设计算法，从而得到比随机决策更好的结果。但是，此处我们讨论的“所有可能的问题”是指在整个问题空间中的均匀分布的所有问题；（由于我们的宇宙物理定律的限制，）实际上与我们所处的环境相关的那些问题的分布并不是一个真实的均匀分布。因此我们可能会提出一个问题：人类的g因素是通用的么？它能推广到这个宇宙中的所有可能的问题中么？
+
 This is a question that is largely irrelevant for psychometrics, because as a subfield of psychology, it makes the implicit assumption that it is concerned solely with humans and the human experience. But this question is highly relevant when it comes to AI: if there is such a thing as universal intelligence, and if human intelligence is an implementation of it, then this algorithm of universal intelligence should be the end goal of our field, and reverse-engineering the human brain could be the shortest path to reach it. It would make our field close-ended: a riddle to be solved. If, on the other hand, human intelligence is a broad but ad-hoc cognitive ability that generalizes to human-relevant tasks but not much else, this implies that AI is an open-ended, fundamentally anthropocentric pursuit, tied to a specific scope of applicability. This has implications for how we should measure it (by using human intelligence and human tasks as a reference) and for the research strategies we should follow to achieve it.
+
+这是一个与心理统计学完全无关的问题，因为作为心理学的一个子领域，它隐含了一个假设，即它仅与人类和人类经验有关。但是，对于AI来说，这个问题非常相关：如果存在诸如通用智能之类的东西，并且如果人类智能是它的一种实现，那么这种通用智能算法就应该成为我们领域的最终目标；对人脑进行反向工程可能是最短的途径。而这将使我们的领域变得封闭：需要解决的难题。另一方面，如果人类智能是一种广泛但特别的认知能力，可以概括为与人类有关的任务，但并没有更深层次“智能”上的意味，则这意味着人工智能是一种开放性的，从根本上以人为中心的追求，只适用于与特定的范围。这对我们应如何衡量（通过使用人类智力和人类任务作为参考）和我们应遵循的研究策略产生影响。
 
 The g factor, by definition, represents the single cognitive ability common to success across all intelligence tests, emerging from applying factor analysis to test results across a diversity of tests and individuals. But intelligence tests, by construction, only encompass tasks that humans can perform – tasks that are immediately recognizable and understandable by humans (anthropocentric bias), since including tasks that humans couldn’t perform would be pointless. Further, psychometrics establishes measurement validity by demonstrating predictiveness with regard to activities that humans value (e.g. scholastic success): the very idea of a “valid” measure of intelligence only makes sense within the frame of reference of human values.
 
