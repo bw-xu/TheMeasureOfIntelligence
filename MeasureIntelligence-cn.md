@@ -344,13 +344,41 @@ We argue that several important principles of psychometrics can inform intellige
 我们认为，在广义人工智能和广义人工智能发展的背景下，心理测量学的几个重要原则可以指导人工智能的智能评估:
 
  - Measuring abilities (representative of broad generalization and skill-acquisition efficiency), not skills. Abilities are distinct from skills in that they induce broad generalization, i.e. they form the basis for skill across a broad range of tasks, including tasks that were previously unknown to the ability-enabled system and its developers.
+ 
+ - 衡量能力(代表泛化和技能获取效率)，而不是技能。能力与技能的不同之处在于，它们会产生广泛的泛化，也就是说，它们构成了广泛任务中技能的基础，包括那些启用了功能的系统及其开发人员以前未知的任务。
+  
  - Doing so via batteries of tasks rather than any single task, that should be previously unknown to both the test taking system and the system developers (this is necessary to assess broad generalization as opposed to skill or local generalization).
+ 
+ - 通过大量的任务而不是单个任务来完成，这应该是测试系统和系统开发人员之前不知道的(这是评估泛化而不是技能或局部泛化所必需的)。
+
  - Having explicit standards regarding reliability, validity, standardization, and freedom from bias:
+<<<<<<< HEAD
   - Reliability implies that the test results for a given system should be reproducible over time and across research groups.
   - Validity implies that what the test assesses should be clearly understood; test creators should be able to answer 1) what assumptions does the test make? 2) what does the test predict, i.e. what broad abilities would a successful result demonstrate, and how well does the test predict these abilities? (Which should ideally be achieved via statistical quantification.)
   - Standardization implies adopting shared benchmarks across the subset of the research community that pursues broad AI and general AI. Standard benchmarks in computer vision and natural language processing have already shown to be highly effective catalyzers of progress.
   - Freedom from bias implies that the test should not be biased against groups of test-takers in ways that run orthogonal to the abilities being assessed. For instance, a test of intelligence designed for both humans and AI should not leverage uniquely human acquired knowledge, or should not involve constraints unrelated to intelligence within which machines have unfair advantages (such as fast reaction times), etc.
 
+=======
+ 
+ - 关于可靠性，有效性，标准化和无偏见方面具有明确的标准：
+
+   - Reliability implies that the test results for a given system should be reproducible over time and across research groups.
+   
+   - 可靠性意味着给定系统的测试结果应该随着时间的推移和跨研究小组的复现。
+   
+   - Validity implies that what the test assesses should be clearly understood; test creators should be able to answer 1) what assumptions does the test make? 2) what does the test predict, i.e. what broad abilities would a successful result demonstrate, and how well does the test predict these abilities? (Which should ideally be achieved via statistical quantification.)
+   
+   - 有效性意味着应该清楚地理解测试评估的内容；测试创建者应该能够回答 1)测试做了什么假设？ 2)测试预测的是什么，即一个成功的结果会证明哪些广泛的能力，以及测试对这些能力的预测程度如何？ （理想情况下应通过统计量化来实现。）
+   
+   - Standardization implies adopting shared benchmarks across the subset of the research community that pursues broad AI and general AI. Standard benchmarks in computer vision and natural language processing have already shown to be highly effective catalyzers of progress.
+ 
+   - 标准化意味着在追求广泛AI和通用AI的研究团体的子集中采用共享基准。 计算机视觉和自然语言处理中的标准基准已经显示出其是进步的高效催化剂。
+
+   - Freedom from bias implies that the test should not be biased against groups of test-takers in ways that run orthogonal to the abilities being assessed. For instance, a test of intelligence designed for both humans and AI should not leverage uniquely human acquired knowledge, or should not involve constraints unrelated to intelligence within which machines have unfair advantages (such as fast reaction times), etc.
+
+   - 无偏见意味着测试不应以与所评估能力正交的方式针对各组应试者产生偏见。 例如，针对人类和AI设计的智力测试不应利用人类独有的知识，也不应涉及与智力无关的约束，在这些约束中，机器具有不公平的优势（例如快速的响应时间）等。
+   
+>>>>>>> 1ecdad03ddc02ececa3379b777d84f020bbad87c
 Simultaneously, we argue that certain other aspects of psychometrics may be discarded in the development of new intelligence tests for AI:
 
  - The exact number and taxonomy of cognitive abilities considered, being a subject of ongoing debate within cognitive psychology and being perhaps overly anthropocentric, should not be used as a strict template for artificial cognitive architectures and their evaluation. Existing taxonomies may at best serve as a source of inspiration.
